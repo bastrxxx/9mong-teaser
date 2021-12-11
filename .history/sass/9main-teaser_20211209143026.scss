@@ -1,0 +1,112 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300;400;500;700&display=swap');
+$fontfam: 'Arima Madurai', cursive, Roboto, sans-serif;
+@import 'effect';
+@import 'embed';
+:root {
+  --color1: #4293cf;
+  --color2: #333333;
+  --color3: #808080;
+  --colorok: #31da70;
+  --colorerror: #ff6d6d;
+  --whitecolor: #fff;
+  --colorlink: #409ff5;
+  --spacing: 30px;
+  --colortablehead: #e4e4e4;
+  --bs-gutter-x: 1.5rem;
+}
+.error {color: var(--colorerror) !important;}
+.green {color: var(--colorok) !important;}
+.gold {color: var(--color1) !important;}
+.blue {color: var(--colorlink) !important;}
+.main {color: var(--color1) !important;}
+body {font-family: $fontfam;font-size: 14px;font-weight: 400;color: var(--color2);background: url(../images/bg-bot.jpg) no-repeat bottom center;background-size: contain;}
+* {outline: none;box-sizing: border-box;padding: 0;margin: 0;}
+a {text-decoration: none;transition: all 0.3s ease-in-out;}
+button {transition: all 0.7s ease-in-out !important;}
+a:hover {text-decoration: none;}
+main {position: relative;height: 100vh;}
+.container{max-width: 1280px;}
+.wrapper {margin: 0 auto;position: relative;width:100%;overflow: hidden;}
+#layout{width: 1920px;height:auto;transform-origin: top left;overflow: hidden;}
+.tren18{position: absolute;z-index: 10;left:0;top:317px;}
+/*=Header=*/
+.header {position: relative;background:url(../images/bg-top.jpg) no-repeat top center;height: 1000px;
+  .bgvideo {width: 1920px;height: 1000px;position: absolute;top: 0;left: 50%;margin-left: -960px;
+    #videoef{width: 100%;height: auto;}
+  }
+  .header-center{z-index: 9;position: relative;
+    .btnvideo{
+      img{opacity: 0;}
+    }
+  }
+}
+.slider{width: 100%;overflow: hidden;}
+/*==Dangkynhanqua*/
+.dangkynhanqua{background: url(../images/bg-dknhanqua.jpg) no-repeat top center;
+
+}
+
+.footer{min-height: 200px;background-color:#f2f6fc;margin-top:170px;
+  .footer-menu{background-color:#2d638dea;
+    ul{display: flex;justify-content: center;align-items: center;align-content: center;list-style: none;
+      li{padding: 0.5rem 1rem;
+        a{color: var(--whitecolor);
+          &:hover{color:#bbe2ff;}
+        }
+      }
+    }
+  }
+  .footer-content{display: flex;flex-direction: column;align-items: center;justify-content: center;
+    p{line-height: 1;font-weight: 500;}
+  }
+}
+.floatbar{width: 166px;height: 628px;background: url(../images/floatside.png) no-repeat top center;position: fixed;right: 0;top: 20%;z-index: 15;
+  ul{list-style: none;display: flex;justify-content: center;align-items: center;flex-direction: column;font-size: 12px;
+    li{padding:0.3rem 0;
+      a{display: flex;align-items: center;align-content:center;color: #fff;
+        &:hover{filter: brightness(120%);}
+      }
+      a.store{background: #050f15;padding:0.5rem;border-radius:6px;color:#fff;width: 124px;height: 39px;
+        img{width: 28px;height: 28px;object-fit: cover;}
+        span{line-height: 1;}
+        &:hover{background: #0c2433;}
+      }
+      a.naptien{position: relative;
+        .light{
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 2;
+          overflow: hidden;
+          -webkit-filter: brightness(2);
+          filter: brightness(2);
+          -webkit-mask-size: 300% 200%;
+          mask-size: 300% 200%;
+           -webkit-mask-image: -webkit-linear-gradient(-180deg, rgba(255,255,255,0) 30%, #fff 50%, rgba(255,255,255,0) 60%);
+          mask-image: -webkit-linear-gradient(-180deg, rgba(255,255,255,0) 40%, #fff 50%, rgba(255,255,255,0) 60%);
+          -webkit-animation: laluot linear 2.5s infinite 1s;
+          animation: laluot linear 2.5s infinite 1s;
+        }
+      }
+      a.linktc{background: url(../images/bg-btn.png) no-repeat top center;display: flex;align-items: center;justify-content: center;width: 124px;height: 39px;}
+      a.totop{display: block;text-indent: -9999px;}
+    }
+  }
+}
+.nofixed {position: relative !important;}
+
+
+@media (max-width: 1024px) {
+  /*	footer{position: relative;}*/
+}
+
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 540px) {
+  
+}
+@media (max-width: 414px) {
+  
+}

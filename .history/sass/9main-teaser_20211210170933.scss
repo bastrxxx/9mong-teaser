@@ -1,0 +1,243 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;700;900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap');
+$fontfam: 'Montserrat', Roboto, sans-serif;
+$fontfam2: 'Arima Madurai', Roboto, sans-serif;
+@import 'effect';
+@import 'embed';
+:root {
+  --color1: #21569e;
+  --color2: #333333;
+  --color3: #808080;
+  --colorok: #31da70;
+  --colorerror: #ff6d6d;
+  --whitecolor: #fff;
+  --colorlink: #409ff5;
+  --spacing: 30px;
+  --colortablehead: #e4e4e4;
+  --bs-gutter-x: 1.5rem;
+}
+.error {color: var(--colorerror) !important;}
+.green {color: var(--colorok) !important;}
+.gold {color: var(--color1) !important;}
+.blue {color: var(--colorlink) !important;}
+.main {color: var(--color1) !important;}
+body {font-family: $fontfam;font-size: 14px;font-weight: 400;color: var(--color2);background: linear-gradient(0deg, rgba(154,207,255,1) 0%, rgba(203,231,255,1) 99%, rgba(255,255,255,1) 100%);}
+* {outline: none;box-sizing: border-box;padding: 0;margin: 0;border:none;}
+a {text-decoration: none;transition: all 0.3s ease-in-out;}
+button {transition: all 0.7s ease-in-out !important;}
+a:hover {text-decoration: none;}
+main {position: relative;height: 100vh;}
+.container{max-width: 1280px;}
+.wrapper {margin: 0 auto;position: relative;width:100%;}
+#layout{width: 1920px;height:auto;transform-origin: top left;overflow: hidden;}
+.tren18{position: absolute;z-index: 10;left:0;top:150px;}
+/*=Header=*/
+.header {position: relative;background:url(../images/bg-top.jpg) no-repeat;height: 1000px;
+  ul.menu-top{display: flex;position: absolute;z-index: 4;top:7px;right: 10px;list-style: none;align-items: center;justify-content: center;grid-gap:10px;
+    li{
+      a{display: flex;width: 42px;height: 42px;font-size: 1.3rem;align-items: center;justify-content: center;background:#28829e;color: var(--whitecolor);
+        &:hover{filter: brightness(120%);}
+      }
+    }
+  }
+  .bgvideo {width: 1920px;height: 1000px;position: absolute;top: 0;left: 50%;margin-left: -960px;z-index: 1;
+    #videoef{width: 100%;height: auto;}
+  }
+  .header-center{z-index: 9;position: relative;
+    .btnvideo{
+      img{opacity: 0;}
+    }
+  }
+}
+.slider{width: 100%;overflow: hidden;}
+/*==Dangkynhanqua*/
+.dangkynhanqua{background: url(../images/bg-dknhanqua.jpg) no-repeat;position: relative;z-index: 2;height:653px;
+  .container{margin-top: -47px;
+    .top-dk{
+      ul{list-style: none;display: flex;justify-content: center;grid-gap: 25px;
+        li{
+          a{
+            &:hover{filter: brightness(120%);}
+          }
+          a.dadangky{background: url(../images/bg-dadangky.png) no-repeat top center;width: 380px;height: 75px;display: flex;justify-content: center;align-items: center;font-size: 24px;font-weight: 700;color: var(--color1);cursor:default;
+            &:hover{filter: brightness(100%);}
+            span.luotdk{color: #2045c2;}
+          }
+        }
+      }
+    }
+    .mocdat{background: url(../images/caiquat.png) no-repeat center center;width: 776px;height: 556px;position: relative;
+      ul{list-style: none;
+        li.moc{width:113px;height: 112px;position:absolute;
+          a{width:113px;height: 112px;display: block;background: url(../images/nut-disable.png) no-repeat top center;position: relative;
+            .hover{position: absolute;left:-225px;top: 0;display: none;z-index: 3;}
+            span.text{position: absolute;border: 2px solid #154ea6;border-radius: 8px;padding: 0rem 0.5rem;font-weight: 700;font-size: 22px;color:#154ea6;
+              &:before{position:absolute;width: 10px;height: 20px;background:#fdeebf;content: " ";}
+            }
+            &:hover > .hover{display: block;}
+          }
+          a.enable{background-image: url(../images/nut-enable.png);
+            span.text{color: #aa0000;border-color:#aa0000;}
+          }
+        }
+        li.moc1{top:188px;left:-3px;
+          a{
+            span.text{left: 103px;top: 39px;
+              &:before{left:-5px;top: 6px;}
+            }
+          }
+        }
+        li.moc2{top:50px;left:107px;
+          a{
+            span.text{left:85px;top:74px;
+              &:before{left:-5px;top: 6px;}
+            }
+          }
+        }
+        li.moc3{top:-20px;left:327px;
+          a{
+            span.text{left:6px;top:96px;
+              &:before{left:36px;top: -4px;width: 20px;height: 5px;}
+            }
+          }
+        }
+        li.moc4{top:50px;right:107px;
+          a{
+            span.text{left:-85px;top:74px;
+              &:before{left:100px;top: 5px;}
+            }
+          }
+        }
+        li.moc5{top:188px;right:-3px;
+          a{
+            span.text{left: -103px;top: 39px;
+              &:before{right:-5px;top: 6px;}
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*==Vongquay====*/
+.vongquay{background: url(../images/bg-vongquay.jpg) no-repeat;height: 920px;position: relative;overflow: hidden;
+  .container{display: flex;
+    .vongquay-main{position: relative;background:url(../images/vongquay/bg.png) no-repeat top center;width: 594px;height: 615px;margin:230px 0 0 42px;z-index: 2;display: flex;align-items: center;justify-content: center;flex-shrink:0;
+      .khungngoai{position:absolute;top: 0;left: 0;z-index: 4;}
+      .items{
+        ul{list-style: none;
+          li{position:absolute;top: 0;left: 0;z-index: 3;
+            .show{z-index: 3;position:absolute;top: 0;left: 0;visibility: hidden;}
+          }
+          li.on{
+            .show{visibility: visible;}
+          }
+        }
+      }
+      #go1{position:relative;z-index: 56;width: 295px;height: 295px;top: 8px;left: 16px;
+        a{text-align: center;display:block;
+          img{position: absolute;top: 0;left: 0;}
+          .soluot{position: absolute;top:151px;color: #fde2bd;font-size: 20px;font-family: $fontfam2;font-weight:900;left: 100px;width:100px;text-align: center;}
+          &:hover{filter: brightness(120%);}
+          &:focus{transform: translateY(2px);}
+        }
+      }
+    }
+    .frame-ls{transform: translateX(-165px);width: 727px;height:auto;padding-top: 234px;display: flex;flex-direction: column;align-items: center;
+      .btn2{margin-left: 5rem;grid-gap:20px;display: flex;grid-gap:40px;
+        a{
+          &:hover{filter: brightness(120%);}
+        }
+      }
+      .showlichsu{background:url(../images/vongquay/bg-phanthuong.png) no-repeat top center;width: 727px;height: 488px;
+        .table-ls{width: 448px;height: 392px;margin-left: 11.5rem;margin-top: 3.5rem;border-radius:10px;background: rgb(147,43,47);
+          background: linear-gradient(0deg, rgba(147,43,47,1) 0%, rgba(181,61,66,1) 100%);box-shadow:inset 0 1px 2px 1px rgba(0,0,0,0.2), 0 2px 2px 1px #b34249;padding: 1rem;overflow: hidden;overflow-y: scroll;
+          table{color: #fff;
+            thead{color: #fbe9aa;font-size: 120%;}
+            tr{border-color:#e0605c;}
+          }
+        }
+      }
+      p{font-family: $fontfam2;font-size: 140%;color: #851715;margin-top: 1rem;font-weight:800;margin-left: 5rem;}
+      .bot-ls{margin-left: 5rem;display: flex;grid-gap:20px;
+        a{
+          &:hover{filter: brightness(120%);}
+        }
+      }
+
+    }
+  }
+}
+/*==SLIDER==*/
+.slider{background: url(../images/bg-tinhnang.jpg) no-repeat;height: 921px;position: relative;overflow: hidden;
+  .sliderin{margin-top: 150px;
+    .swiper-container {width: 1200px;padding-top: 50px;padding-bottom: 50px;
+      .swiper-slide{width: 925px;
+        img{margin: 0 auto;display: block;}
+      }
+    }
+  }
+}
+/*==CHUYENTRANG=*/
+#list-example{display: flex;flex-direction: column;position: fixed;height: 367px;top: 50%;left:2%;background: url(../images/bg-chuyentrang.png) no-repeat left center;z-index: 10;justify-content: center;grid-gap:20px;align-items: center;transform: translateY(-180px);
+  a{background: transparent;border: none;position: relative;font-size: 18px;font-weight: 600;padding: 0.5rem 1.5rem;color:var(--whitecolor);text-shadow: 01px 1px 1px #343434, -1px -1px 1px #343434;
+    &:before{content: "";background: url(../images/icon-ct.png) no-repeat left center;width: 36px;height: 36px;position: absolute;left: -18px;top: 0px;}
+  }
+  a.active{color: #faffb1;
+    &:before{background-image: url(../images/icon-ct-at.png);}
+  }
+
+}
+/*=POPUP DANGKYSOM=*/
+#dksom{
+  .modal-content{background: url(../images/popup1.png) no-repeat top center;border:none;height: 491px;width: 900px;margin: 0 auto;position: relative;
+    .modal-body{padding:3rem 10rem  4rem;
+      .close{position: absolute;top:-20px;right:0;width: 119px;height: 107px;background: url(../images/close.png) no-repeat top center;}
+      .content-dksom{text-align: center;
+        h4{font-size: 30px;color: #db7438;font-weight: 700;text-transform: uppercase;}
+      }
+    }
+  }
+}
+
+
+/*==FOOTER=*/
+.footer{background:url(../images/bg-footer.jpg) no-repeat top center;height:335px;display: flex;align-items: center;justify-content: center;
+  .footer-content{display: flex;flex-direction: column;align-items: center;justify-content: center;
+    p{line-height: 1;font-weight: 500;}
+  }
+}
+.floatbar{width:323px;height: 240px;position: fixed;right: 0;top: 20%;z-index: 15;
+    a.naptien{position: relative;
+      .light{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        overflow: hidden;
+        -webkit-filter: brightness(2);
+        filter: brightness(2);
+        -webkit-mask-size: 300% 200%;
+        mask-size: 300% 200%;
+          -webkit-mask-image: -webkit-linear-gradient(-60deg, rgba(255,255,255,0) 30%, #fff 50%, rgba(255,255,255,0) 60%);
+        mask-image: -webkit-linear-gradient(-60deg, rgba(255,255,255,0) 40%, #fff 50%, rgba(255,255,255,0) 60%);
+        -webkit-animation: laluot linear 2.5s infinite 1s;
+        animation: laluot linear 2.5s infinite 1s;
+      }
+    }
+}
+
+@media (max-width: 1024px) {
+  /*	footer{position: relative;}*/
+}
+
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 540px) {
+  
+}
+@media (max-width: 414px) {
+  
+}

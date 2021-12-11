@@ -1,0 +1,105 @@
+/* CSS Document */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+$fontfam: "Montserrat", Roboto, sans-serif;
+@import 'giftcode';
+@import 'hotro';
+:root {
+  --color1: #e13f45;
+  --color2: #333333;
+  --color3: #808080;
+  --colorok: #31da70;
+  --colorerror: #ff6d6d;
+  --whitecolor: #fff;
+  --colorlink: #409ff5;
+  --spacing: 30px;
+  --colortablehead: #e4e4e4;
+  --bs-gutter-x: 1.5rem;
+}
+.error {color: var(--colorerror) !important;}
+.green {color: var(--colorok) !important;}
+.gold {color: var(--color1) !important;}
+.blue {color: var(--colorlink) !important;}
+.main {color: var(--color1) !important;}
+body {
+  font-family: $fontfam;
+  font-size: 14px;
+  font-weight: 400;
+  background: url("../../images/pattern-bg.jpg") repeat top center;
+  color: var(--color2);
+}
+* {
+  outline: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+button {
+  transition: all 0.7s ease-in-out !important;
+}
+a:hover {
+  text-decoration: none;
+}
+main {
+  position: relative;
+  height: 100vh;
+}
+.container {
+  max-width: 768px;
+}
+.wrapper {
+  max-width: 768px;
+  margin: 0 auto;
+}
+header {
+  background: var(--whitecolor);
+  border-bottom: 1px solid #ebebeb;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  .bg-footer {
+    background: var(--color2);
+    padding: 30px 0 90px;
+    text-align: center;
+  }
+  .mainfooter {
+    position: relative;
+    bottom: 0;
+    img {
+      width: 100px;
+      height: 30px;
+      object-fit: cover;
+      margin-bottom: 25px;
+      filter: grayscale(100%);
+      filter:brightness(10000%);
+    }
+    p {
+      line-height: 1.6;
+      color: var(--whitecolor);
+    }
+  }
+}
+.nofixed {
+  position: relative !important;
+}
+
+
+@media (max-width: 1024px) {
+  /*	footer{position: relative;}*/
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 540px) {
+  
+}
+@media (max-width: 414px) {
+  
+}
