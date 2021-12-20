@@ -185,8 +185,8 @@ main {position: relative;height: 100vh;}
 /*==SLIDER==*/
 .slider{background: url(../images/bg-tinhnang.jpg) no-repeat;height: 921px;position: relative;overflow: hidden;z-index: 2;
   .sliderin{margin-top: 150px;
-    .swiper-container {width: 1200px;padding-top: 50px;padding-bottom: 50px;overflow: inherit;
-      .swiper-slide{width: 925px;
+    .swiper-container {width: 1200px;padding-top: 50px;padding-bottom: 50px;overflow: hidden;
+      .swiper-slide{width: 936px;
       }
     }
   }
@@ -220,6 +220,7 @@ main {position: relative;height: 100vh;}
 .modal-custom2{
   .modal-content{background: url(../images/popup2.png) no-repeat top center;border:none;height:640px;width: 1202px;margin: 0 auto;position: relative;
     .modal-body{padding: 4rem 4rem 4rem 23rem;
+      .tiltle{position: absolute;left: 37px;top: 45%;font-family: $fontfam2;color: #a74037;font-weight: 700;}
       .content-dksom{text-align: left;overflow: hidden;overflow-y: scroll;width: 718px;height: 520px;
         h4{text-align: center;}
         

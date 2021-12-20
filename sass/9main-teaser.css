@@ -762,11 +762,11 @@ main {
   width: 1200px;
   padding-top: 50px;
   padding-bottom: 50px;
-  overflow: inherit;
+  overflow: hidden;
 }
 
 .slider .sliderin .swiper-container .swiper-slide {
-  width: 925px;
+  width: 936px;
 }
 
 /*==CHUYENTRANG=*/
@@ -906,6 +906,15 @@ main {
 
 .modal-custom2 .modal-content .modal-body {
   padding: 4rem 4rem 4rem 23rem;
+}
+
+.modal-custom2 .modal-content .modal-body .tiltle {
+  position: absolute;
+  left: 37px;
+  top: 45%;
+  font-family: "Arima Madurai", Roboto, sans-serif;
+  color: #a74037;
+  font-weight: 700;
 }
 
 .modal-custom2 .modal-content .modal-body .content-dksom {
