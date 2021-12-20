@@ -169,8 +169,8 @@ a {
 }
 
 button {
-  -webkit-transition: all 0.7s ease-in-out !important;
-  transition: all 0.7s ease-in-out !important;
+  -webkit-transition: all 0.3s ease-in-out !important;
+  transition: all 0.3s ease-in-out !important;
 }
 
 a:hover {
@@ -828,20 +828,20 @@ main {
 .modal-custom .modal-content {
   background: url(../images/popup1.png) no-repeat top center;
   border: none;
-  height: 491px;
-  width: 900px;
+  height: 562px;
+  width: 1135px;
   margin: 0 auto;
   position: relative;
 }
 
 .modal-custom .modal-content .modal-body {
-  padding: 3rem 10rem  4rem;
+  padding: 4rem 12rem;
 }
 
 .modal-custom .modal-content .modal-body .close {
   position: absolute;
-  top: -20px;
-  right: 0;
+  top: -10px;
+  right: 120px;
   width: 119px;
   height: 107px;
   background: url(../images/close.png) no-repeat top center;
@@ -885,7 +885,7 @@ main {
   color: #91332e;
 }
 
-.modal-custom .modal-content .modal-body .content-dksom .btn-dangky {
+.modal-custom .modal-content .modal-body .content-dksom .btn {
   width: 70%;
   margin: 0 auto;
   background: #db7438;
@@ -893,6 +893,18 @@ main {
   font-weight: 700;
   font-size: 24px;
   margin-top: 1.5rem;
+}
+
+.modal-custom .modal-content .modal-body .content-dksom .btn-dangky {
+  background: transparent;
+  border: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-custom .modal-content .modal-body .content-dksom .btn-dangky:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
 }
 
 .modal-custom2 .modal-content {
@@ -908,10 +920,16 @@ main {
   padding: 4rem 4rem 4rem 23rem;
 }
 
+.modal-custom2 .modal-content .modal-body .close {
+  position: absolute;
+  top: -20px;
+  right: 0;
+}
+
 .modal-custom2 .modal-content .modal-body .tiltle {
   position: absolute;
-  left: 37px;
-  top: 45%;
+  left: 62px;
+  top: 42%;
   font-family: "Arima Madurai", Roboto, sans-serif;
   color: #a74037;
   font-weight: 700;
@@ -922,7 +940,7 @@ main {
   overflow: hidden;
   overflow-y: scroll;
   width: 718px;
-  height: 520px;
+  height: 494px;
 }
 
 .modal-custom2 .modal-content .modal-body .content-dksom h4 {

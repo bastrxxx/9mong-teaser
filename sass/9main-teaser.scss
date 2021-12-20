@@ -25,7 +25,7 @@ body {font-family: $fontfam;font-size: 14px;font-weight: 400;color: var(--color2
   background: linear-gradient(0deg, rgba(154,207,255,1) 0%, rgba(154,207,255,1) 48%, rgba(154,207,255,1) 99%, rgba(255,255,255,1) 100%);}
 * {outline: none;box-sizing: border-box;padding: 0;margin: 0;border:none;}
 a {text-decoration: none;transition: all 0.3s ease-in-out;}
-button {transition: all 0.7s ease-in-out !important;}
+button {transition: all 0.3s ease-in-out !important;}
 a:hover {text-decoration: none;}
 main {position: relative;height: 100vh;}
 .container{max-width: 1280px;}
@@ -203,16 +203,19 @@ main {position: relative;height: 100vh;}
 }
 /*=POPUP DANGKYSOM=*/
 .modal-custom{
-  .modal-content{background: url(../images/popup1.png) no-repeat top center;border:none;height: 491px;width: 900px;margin: 0 auto;position: relative;
-    .modal-body{padding:3rem 10rem  4rem;
-      .close{position: absolute;top:-20px;right:0;width: 119px;height: 107px;background: url(../images/close.png) no-repeat top center;}
+  .modal-content{background: url(../images/popup1.png) no-repeat top center;border:none;height:562px;width: 1135px;margin: 0 auto;position: relative;
+    .modal-body{padding:4rem 12rem;
+      .close{position: absolute;top:-10px;right:120px;width: 119px;height: 107px;background: url(../images/close.png) no-repeat top center;}
       .content-dksom{text-align: center;
         h4{font-size: 30px;color: #db7438;font-weight: 700;text-transform: uppercase;}
         h6{color: #db7438;font-size: 22px;}
         input{border:2px solid #e29259;color: #e29259;background: transparent;width:70%;margin: 0 auto;}
         p{font-size: 18px;line-height: 1.6;font-weight: 500;color: #91332e;}
         table{font-size: 18px;line-height: 1.6;font-weight: 500;color: #91332e;}
-        .btn-dangky{width: 70%;margin: 0 auto;background:#db7438;color: white;font-weight: 700;font-size: 24px;margin-top:1.5rem;}
+        .btn{width: 70%;margin: 0 auto;background:#db7438;color: white;font-weight: 700;font-size: 24px;margin-top:1.5rem;}
+        .btn-dangky{background: transparent;border: none;transition: all 0.3s ease-in-out;
+          &:hover{filter: brightness(120%);}
+        }
       }
     }
   }
@@ -220,8 +223,9 @@ main {position: relative;height: 100vh;}
 .modal-custom2{
   .modal-content{background: url(../images/popup2.png) no-repeat top center;border:none;height:640px;width: 1202px;margin: 0 auto;position: relative;
     .modal-body{padding: 4rem 4rem 4rem 23rem;
-      .tiltle{position: absolute;left: 37px;top: 45%;font-family: $fontfam2;color: #a74037;font-weight: 700;}
-      .content-dksom{text-align: left;overflow: hidden;overflow-y: scroll;width: 718px;height: 520px;
+      .close{position: absolute;top:-20px;right:0;}
+      .tiltle{position: absolute;left:62px;top: 42%;font-family: $fontfam2;color: #a74037;font-weight: 700;}
+      .content-dksom{text-align: left;overflow: hidden;overflow-y: scroll;width: 718px;height:494px;
         h4{text-align: center;}
         
       }
