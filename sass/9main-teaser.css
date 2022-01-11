@@ -298,10 +298,13 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #92b5e38e;
-  max-width: 650px;
+  background: rgba(176, 217, 255, 0.278);
+  max-width: 540px;
   border-radius: 20px;
   grid-gap: 8px;
+  border: 1px solid #fff;
+  -webkit-box-shadow: -5px 5px 0px #ffffff70;
+          box-shadow: -5px 5px 0px #ffffff70;
 }
 
 .formtaigame .maintaigame .haibtn {
