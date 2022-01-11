@@ -987,6 +987,16 @@ main {
   text-align: center;
 }
 
+#gameramat .modal-content {
+  height: 426px;
+  width: 765px;
+  background-size: contain;
+}
+
+#gameramat .modal-content .modal-body .close {
+  right: 60px;
+}
+
 /*==FOOTER=*/
 .footer {
   background: url(../images/bg-footer.jpg) no-repeat top center;

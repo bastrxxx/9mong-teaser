@@ -242,6 +242,13 @@ main {position: relative;height: 100vh;}
   }
 }
 
+#gameramat{
+  .modal-content{height: 426px;width: 765px;background-size: contain;
+    .modal-body{
+      .close{right: 60px;}
+    }
+  }
+}
 
 /*==FOOTER=*/
 .footer{background:url(../images/bg-footer.jpg) no-repeat top center;height:335px;display: flex;align-items: center;justify-content: center;z-index: 2;

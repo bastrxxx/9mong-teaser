@@ -25,6 +25,21 @@
 			</a>
 		</div><!--End Floatbar-->
 
+		<!----Popup Game ra mat-->
+		<div class="modal fade modal-custom" id="gameramat" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body">
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+						</button>
+						<div class="content-dksom">
+							<h4 class="mt-5 pt-4">Game ra mắt vào tháng 2</h4>
+						</div>   
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
 		<!----Popup Đăng ký sớm-->
 		<div class="modal fade modal-custom" id="dksom" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-xl modal-dialog-centered">
@@ -229,10 +244,10 @@
 						<div class="maintaigame p-2 mx-auto">
 							<a href="javascript:void(0)" class="qrcode"><img src="images/qrcode.png" alt=""/></a>
 							<div class="haibtn">
-								<a href="#" class="taiios"><img src="images/taiios.webp" alt=""/></a>
-								<a href="#" class="taiios"><img src="images/taiandroid.webp" alt=""/></a>
+								<a href="#" class="taiios" data-bs-toggle="modal" data-bs-target="#gameramat"><img src="images/taiios.webp" alt=""/></a>
+								<a href="#" class="taiios" data-bs-toggle="modal" data-bs-target="#gameramat"><img src="images/taiandroid.webp" alt=""/></a>
 							</div>
-							<a href="#" class="taipc"><img src="images/taipc.webp" alt=""/></a>
+							<a href="#" class="taipc" data-bs-toggle="modal" data-bs-target="#gameramat"><img src="images/taipc.webp" alt=""/></a>
 							<a href="javascript:void(0)" class=""><img src="images/icongames.webp" alt=""/></a>
 						</div>
 					</div>
