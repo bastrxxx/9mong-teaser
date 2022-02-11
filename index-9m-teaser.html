@@ -25,6 +25,21 @@
 			</a>
 		</div><!--End Floatbar-->
 
+		<!----SHOW luon popup alpha test-->
+		<div class="modal fade modal-custom3" id="alphatest" tabindex="1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog modal-xl modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body">
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+						</button>
+						<div class="content-dksom">
+							<img src="images/popup.png" alt="" />
+						</div>   
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
 		<!----Popup Game ra mat-->
 		<div class="modal fade modal-custom" id="gameramat" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-xl modal-dialog-centered">
@@ -450,7 +465,7 @@
 			</div><!---End vongquay-->
 			<div class="slider" id="list-item-3">
 				<div class="container p-0">
-					<div class="sliderin wow zoomInUp">				
+					<div class="sliderin">				
 						<!-- Slider main container -->
 						<div class="swiper-container">
 							<!-- Additional required wrapper -->
@@ -557,19 +572,17 @@
 	</script>
 	<script>
 		wow = new WOW(
-		{
-			animateClass: 'animated',
-			offset:       100,
-			callback:     function(box) {
-			console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-			}
+			{
+			boxClass:     'wow',      // default
+			animateClass: 'animated', // default
+			offset:      10          // default
 		}
-		);
+		)
 		wow.init();
-		document.getElementById('moar').onclick = function() {
-		var section = document.createElement('section');
-		section.className = 'section--purple wow fadeInDown';
-		this.parentNode.insertBefore(section, this);
-		};
+		</script>
+		<script type="text/javascript">
+			$(window).on('load', function() {
+				$('#alphatest').modal('show');
+			});
 		</script>
 </html>

@@ -242,6 +242,14 @@ main {position: relative;height: 100vh;}
   }
 }
 
+.modal-custom3{
+  .modal-content{background: transparent;border:none;width: 945px;height:480px;margin: 0 auto;position: relative;
+    .modal-body{
+      .close{position: absolute;top:-20px;right:-90px;width: 119px;height: 107px;background: url(../images/close.png) no-repeat top center;filter: contrast(3);}
+    }
+  }
+}
+
 #gameramat{
   .modal-content{height: 426px;width: 765px;background-size: contain;
     .modal-body{
